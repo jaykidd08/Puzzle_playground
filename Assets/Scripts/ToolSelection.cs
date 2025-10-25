@@ -7,6 +7,11 @@ public class ToolSelection : MonoBehaviour
     public GameObject grappleTool;
     public GameObject platformTool;
 
+    //CHANGE THIS TO FALSE FOR FINAL PRODUCT!!!
+    public static bool hasMiniMan = false;
+    public static bool hasLauncher = false;
+    public static bool hasDimensionalGoggles = false;
+
     private bool Equipped;
     void Start()
     {
@@ -18,20 +23,24 @@ public class ToolSelection : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (hasLauncher)
         {
-            if (Equipped)
+            if (Input.GetKeyDown(KeyCode.Tab))
             {
-                grappleTool.SetActive(false);
-                platformTool.SetActive(true);
-                Equipped = false;
-            }
-            else
-            {
-                grappleTool.SetActive(true);
-                platformTool.SetActive(false);
-                Equipped = true;
+                if (Equipped)
+                {
+                    grappleTool.SetActive(false);
+                    platformTool.SetActive(true);
+                    Equipped = false;
+                }
+                else
+                {
+                    grappleTool.SetActive(true);
+                    platformTool.SetActive(false);
+                    Equipped = true;
+                }
             }
         }
+
     }
 }

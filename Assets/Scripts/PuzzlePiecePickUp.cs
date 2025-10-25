@@ -16,7 +16,6 @@ public class PuzzlePiecePickUp : InteractableObject
     {
         Debug.Log("You have picked up " + item.itemName);
         Inventory.instance.Add(item);
-        //create code to add puzzle piece to inventory
 
         Destroy(gameObject);
     }

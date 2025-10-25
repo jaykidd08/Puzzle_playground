@@ -5,18 +5,9 @@ using UnityEngine;
 public class InteractableObject : MonoBehaviour
 {
 
-    public float radius = 3f;
-
     public virtual void Interact()
     {
         
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-
-        Gizmos.DrawWireSphere(transform.position, radius);
     }
 
 }

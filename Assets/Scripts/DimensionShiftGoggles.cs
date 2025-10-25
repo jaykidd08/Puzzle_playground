@@ -21,11 +21,14 @@ public class DimensionShiftGoggles : MonoBehaviour
     }
     void Update()
     {
-        //Debug.Log("Update Entered");
-        if (Input.GetKeyDown(goggleToggle) && !goggleOnCD && !goggleActive)
+        if (ToolSelection.hasDimensionalGoggles)
         {
-            StartCoroutine(ActivateGoggles());
-            //Debug.Log("Keydown read");
+            //Debug.Log("Update Entered");
+            if (Input.GetKeyDown(goggleToggle) && !goggleOnCD && !goggleActive)
+            {
+                StartCoroutine(ActivateGoggles());
+                //Debug.Log("Keydown read");
+            }
         }
     }
 
