@@ -14,3 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Launcher Part Two
   icon: {fileID: 0}
+  itemDescription: "public void OnCollisionEnter (Collision col) {           }\n\r\nOnCollisionEnter
+    is a built in unity Method that is automatically called when two objects with
+    Rigidbody component collide with one another. The variable col can provide various
+    different pieces of information about the object that is being collided with
+    and as such can be used in many ways. \r\nEx: \r\n<indent = 60>1: col.collider.tag
+    \u2013 Returns the tag of the object which can be used to compare to a matching
+    tag \r\n2: col.contacts[0].point  - Returns the exact position where the col
+    object made contact with another object.\r\n3: col.rigidbody.AddForce() \u2013
+    Can be used to add force to an object when collisions is made allowing the game
+    to add additional forces beyond normal velocities. This is useful in cases where
+    the game needs to simulate explosions\r\nThis a just a portion of what can be
+    gathered from the OnCollisionEnter() method and some examples of what is used
+    to make this tool. The Platform Launcher tool uses the \u201Ccollider.tag\u201D
+    and \u201CContacts[0].point\u201D to check if the projectile has collided with
+    an object that has the tag \u201CPlatfromWall\u201D and if so, calls a method
+    in the PlatformManager script to create an instance of a platform at the contact
+    point between the projectile and the object that it has collided with.\n\r\nif
+    (collision.collider.tag == \"PlatformWall\")\r\n {\r\n     ContactPoint platformPoint
+    = collision.contacts[0];\r\n     Vector3 normal = platformPoint.normal;\r\n    
+    PlatformManager.Instance.SpawnPlatform(platform, platformPoint.point, normal);\r\n}</indent>\r\n"

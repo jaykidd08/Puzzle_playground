@@ -14,3 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Dimensional Vision Part One
   icon: {fileID: 0}
+  itemDescription: "There are many times in a game design where you\u2019ll need
+    a program to run two different sections of code simultaneously. Normally code
+    runs one line after the other until it reaches the end of the script and in the
+    case of Unity when the update functions is used it will continuously call any
+    code within the update function every frame which can be a big issue for performance.
+    The way to solve both of these issues is to allow the update function to run
+    a smaller portion of code and divert any code that won\u2019t be used regularly
+    to a Coroutine which can be called using \u201CStartCoroutine(CoroutineName());\u201D
+    which will then start running the code within the Coroutine while the update
+    function is allowed to continue through any other code within the update function.
+    The Coroutine above is looking for a line of code that matches \u201CIEnumerator
+    CoroutineName()\u201D where it will now run everything within the Coroutine and
+    can even apply waiting times to the code without stopping the rest of the game.
+    Here is some example code from the Dimensional Goggles Script.\r\ngoggleOnCD
+    = true;\r\nyield return new WaitForSeconds(goggleCD);\r\ngoggleOnCD = false;\r\nThis
+    code simply sets the Boolean goggleOnCD to true then calls for the Coroutine
+    to Wait a number of seconds set in the goggleCD variable. After the number of
+    seconds has passed the program will now be allowed forward to reset the goggleOnCD
+    Boolean to false.\r\n"

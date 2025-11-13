@@ -14,3 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Launcher Part One
   icon: {fileID: 0}
+  itemDescription: "\tInstantiate is useful for creating objects that are not present
+    when a scene first starts, especially when you need to spawn multiple copies
+    during gameplay. Common uses include generating collectable items, creating enemies
+    over time, or firing projectiles like the one in this launcher example. \n\tYou
+    start by creating a variable of the appropriate type and giving it a descriptive
+    name. In this case, we\u2019re creating a 3D object in the player\u2019s world,
+    so I\u2019ve made the type GameObject, and we name it projectile to keep the
+    naming scheme clear. \n\tNext, we initialize that variable using the Instantiate()
+    method, which is built into the Unity Engine. In this example, Instantiate()
+    takes three arguments. \n<indent=60>1. The first argument is a reference to the
+    GameObject prefab that was initialized earlier in the script. launcherAmmo is
+    a public GameObject that will be assigned with an appropriate prefab in the inspector
+    window.\n2. The second argument defines where the new object will spawn. The
+    script uses attackPoint.position, which refers to an empty GameObject placed
+    at the tip of the launcher model in the scene view. The .position property returns
+    a Vector3 containing the X, Y, and Z coordinates of that Transform\u2019s positn.
+    \n3. The third argument sets the rotation of the spawned object. In this case,
+    cam.rotation provides a Quaternion that matches the player camera\u2019s current
+    orientation, ensuring the projectile launches in the direction the player is
+    facing. </indent>"

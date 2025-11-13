@@ -14,3 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Launcher Part Three
   icon: {fileID: 0}
+  itemDescription: "private Queue<GameObject> platforms = new Queue<GameObject>();\r\nThe
+    platforms variable is created as a Queue of GameObjects, which is like a line
+    of objects that slowly grows following FIFO rules. As objects are dequeued from
+    the line others behind it move forward to take its place. The PlatformManager
+    script uses a Queue to keep track of the number of platforms currently spawned
+    in and will keep the number from exceeding a maximum threshold. \n\r\n<indent
+    = 60>if (platforms.Count >= maxPlatforms)\r\n{\r\n    GameObject oldPlatform
+    = platforms.Dequeue();\r\n    Destroy(oldPlatform);\r\n}</indent>\n\r\nPlatforms.Count
+    returns the number of GameObjects currently in the Queue which is then compared
+    to the Int maxPlatforms to determine if the maximum number of platforms has been
+    reached. Once the game tries to Spawn a platform, but the maxPlatforms is reached
+    the first GameObject in the Queue is Dequeued with \u201Cplatforms.Dequeue();\u201D
+    and the object is destroyed. \n\r\n<indent = 60>GameObject newPlatform = Instantiate(platformPrefab,
+    spawnPosition, rotation);\r\nplatforms.Enqueue(newPlatform);</indent>\n\r\nAfterwards
+    the new Platform that the game is trying to spawn is Instantiated from a prefab
+    and \u201Cplatforms.Enqueue(newPlatform);\u201D is used to place the new platform
+    at the end of the line queue;\r\n"

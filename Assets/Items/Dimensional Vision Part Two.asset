@@ -14,3 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Dimensional Vision Part Two
   icon: {fileID: 0}
+  itemDescription: "public List<GameObject> dimensionalPlatforms;\r\nWithin the DimensionalShiftGoggles
+    script this line of code creates a List of GameObjects that can be assigned in
+    the inspector window. This allow for easy additions of new objects that need
+    to be added to the dimensionalPlatforms array without the need of attaching a
+    script to every object that must disappear for the googles to function properly.
+    \r\nLater in the code this list is called using a foreach statement which will
+    perform the same task on each GameObject that has been placed in the list dimensionalPlatforms.\r\n       
+    foreach (GameObject platform in dimensionalPlatforms)\r\n        {\r\n           
+    if (platform != null)\r\n            {\r\n                platform.SetActive(toggle);\r\n           
+    }\r\n        }\r\nThe statement takes each GameObject in the list and uses a
+    Boolean to set the active state of the object to the opposite of what it was
+    previously. \r\n"

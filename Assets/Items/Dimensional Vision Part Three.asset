@@ -14,3 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Dimensional Vision Part Three
   icon: {fileID: 0}
+  itemDescription: "With the use of the list and coroutine features the Dimensional
+    Goggles turn into a very simple to code gameplay mechanic, so the last piece
+    of this tool will be a tip for keeping the inspector window well organized and
+    easy to read. With the many scripts that can end up attached to an object as
+    well as different variables that can be set in the inspector window, it would
+    be helpful to have section titles to categorize the variables to make finding
+    the correct variable easier. This can be achieved by using a \u201CHeader\u201D
+    which creates a bold text in the inspector window which can be used to break
+    up variables. \r\nEX:\r\nPublic GameObject simpleCrate;\r\n[Header(\u201CSection
+    Title Here\u201D)]\r\nPublic List<GameObject> listOfObjects;\r\nThis would create
+    a section break that looks similar to this\r\n\r\nsimpleCrate[crate 1]\r\n\r\nSection
+    Title Here\r\nlistOfObjects[listObject1]\r\n"
