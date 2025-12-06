@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dimensional Vision Part One
   m_EditorClassIdentifier: 
   itemName: Dimensional Vision Part One
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 142b791e028e014438ffe9668dd0e8ce, type: 3}
   itemDescription: "There are many times in a game design where you\u2019ll need
     a program to run two different sections of code simultaneously. Normally code
     runs one line after the other until it reaches the end of the script and in the

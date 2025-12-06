@@ -1197,15 +1197,17 @@ MonoBehaviour:
 
     Interact - E
 
-    Sprint
-    - Shift
+    Inventory
+    - I
+
+    Sprint - Shift
 
     Main Action - LMB
 
     Secondary Action - RMB
 
-    Change tool -
-    Tab
+    Change
+    tool - Tab
 
     Dimensional Goggles - Q
 

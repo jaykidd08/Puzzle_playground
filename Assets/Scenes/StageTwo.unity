@@ -439,9 +439,12 @@ PrefabInstance:
     - target: {fileID: 5201088298951510640, guid: 6cfa9ac0518addd42bc8f5fbafddb72c,
         type: 3}
       propertyPath: m_text
-      value: Keep in mind that that the <b>platform launcher</b> can only have <b>3</b>
-        platforms spawned at any given time. You should be mindful of where you're
-        stepping and where you oldest platform is.
+      value: '<align=center>MAX PLATFORMS</align>
+
+        Keep in mind that that
+        the <b>platform launcher</b> can only have <b>3</b> platforms spawned at
+        any given time. You should be mindful of where you''re stepping and where
+        you oldest platform is.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -786,9 +789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDuration: 10
   goggleCD: 5
-  dimensionalPlatforms:
-  - {fileID: 0}
-  - {fileID: 0}
+  dimensionalPlatforms: []
 --- !u!1 &138400354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,7 +1221,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh57164
+  m_Name: pb_Mesh45318
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -13644,7 +13645,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 11d7d9d8febb8ab4597069ac3eba1a85, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14434,9 +14435,12 @@ PrefabInstance:
     - target: {fileID: 5201088298951510640, guid: 6cfa9ac0518addd42bc8f5fbafddb72c,
         type: 3}
       propertyPath: m_text
-      value: Some <i>Launcher Platform walls</i> may be smaller or at more difficult
-        angles. You can press <b>"Right Mouse Button"</b> to show a trajectory line
-        to see where you platform will land.
+      value: '<align=center>TRAJECTORY PREDICTION</align>
+
+        Some <i>Launcher
+        Platform walls</i> may be smaller or at more difficult angles. You can press
+        <b>"Right Mouse Button"</b> to show a trajectory line to see where you platform
+        will land.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16443,7 +16447,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 142b791e028e014438ffe9668dd0e8ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16520,7 +16524,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b85309af8830b614696ec8dc04cca5df, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -55519,7 +55523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2083717878
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56038,9 +56042,12 @@ PrefabInstance:
     - target: {fileID: 5201088298951510640, guid: 6cfa9ac0518addd42bc8f5fbafddb72c,
         type: 3}
       propertyPath: m_text
-      value: 'The <b>platform launcher</b> can be used to create small platforms
-        that you can jump on. Simply cycle what tool you have equipped by pressing
-        <b>"Tab"</b> then fire at any <i><color=red>red</color> rectangles</i>. '
+      value: '<align=center>PLATFORM LAUNCHER</align>
+
+        The <b>platform launcher</b>
+        can be used to create small platforms that you can jump on. Simply cycle
+        what tool you have equipped by pressing <b>"Tab"</b> then fire at any <i><color=red>red
+        rectangles</i></color>. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

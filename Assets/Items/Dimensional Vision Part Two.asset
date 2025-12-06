@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dimensional Vision Part Two
   m_EditorClassIdentifier: 
   itemName: Dimensional Vision Part Two
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 142b791e028e014438ffe9668dd0e8ce, type: 3}
   itemDescription: "public List<GameObject> dimensionalPlatforms;\r\nWithin the DimensionalShiftGoggles
     script this line of code creates a List of GameObjects that can be assigned in
     the inspector window. This allow for easy additions of new objects that need

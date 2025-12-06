@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Launcher Part One
   m_EditorClassIdentifier: 
   itemName: Launcher Part One
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 11d7d9d8febb8ab4597069ac3eba1a85, type: 3}
   itemDescription: "\tInstantiate is useful for creating objects that are not present
     when a scene first starts, especially when you need to spawn multiple copies
     during gameplay. Common uses include generating collectable items, creating enemies

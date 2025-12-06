@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dimensional Vision Part Three
   m_EditorClassIdentifier: 
   itemName: Dimensional Vision Part Three
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 142b791e028e014438ffe9668dd0e8ce, type: 3}
   itemDescription: "With the use of the list and coroutine features the Dimensional
     Goggles turn into a very simple to code gameplay mechanic, so the last piece
     of this tool will be a tip for keeping the inspector window well organized and

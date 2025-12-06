@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Launcher Part Three
   m_EditorClassIdentifier: 
   itemName: Launcher Part Three
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 11d7d9d8febb8ab4597069ac3eba1a85, type: 3}
   itemDescription: "private Queue<GameObject> platforms = new Queue<GameObject>();\r\nThe
     platforms variable is created as a Queue of GameObjects, which is like a line
     of objects that slowly grows following FIFO rules. As objects are dequeued from
